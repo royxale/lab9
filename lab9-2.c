@@ -53,7 +53,7 @@ int parseData(char* inputFileName, struct RecordType** ppData) {
     FILE* inFile = fopen(inputFileName, "r");
     if (!inFile) {
         printf("Failed to open the file\n");
-        return 0; // Return 0 records if file open fails
+        return 0; 
     }
 
     int dataSz = 0;
